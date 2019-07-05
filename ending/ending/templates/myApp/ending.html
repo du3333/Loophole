@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="utf-8">
+	{% load bootstrap3 %}
+    {% bootstrap_css %}
+    {% bootstrap_javascript %}
+    {% bootstrap_messages %}
+	<link href="https://v3.bootcss.com/examples/signin/signin.css" rel="stylesheet">
+    <title>通用漏洞扫描系统</title>
+	{% load bootstrap3 %}
+	 {% load staticfiles %}
+    <link REL="SHORTCUT ICON" HREF="{% static "/favicon.ico" %}"/>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</head>
+<body>
+	<script></script>
+
+  <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="page-header">
+         <h1 style="color:blue">通用漏洞扫描系统<small>自动化扫描常见的漏洞工具</small></h1>
+        </div>
+  </div>
+ <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse dr" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li ><a href="index">主页</a></li>
+		  <li role="presentation" class="dropdown">
+   			 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">工具<span class="caret"></span></a>
+       <ul class="dropdown-menu">
+           <li><a href="web">WEB相关漏洞检测工具</a></li>
+           <li><a href="leak">主机相关漏洞检测工具</a></li>
+       </ul>
+		  </li>
+        <li class="active"><a href="ending"> 防范建议</a></li>
+      </ul>
+    </div>
+
+  </div>
+
+  </nav>
+	 <div>
+      <h2>漏洞防范方法</h2>
+      <dl class="dl-horizontal">
+        <dt>弱口令漏洞：</dt>
+        <dd>使数据库用户名密码复杂。</dd>
+      </dl>
+      <dl class="dl-horizontal">
+        <dt>SQL注入漏洞：</dt>
+        <dd>使用正则表达式过滤传入的参数。</dd>
+      </dl>
+      <dl class="dl-horizontal">
+        <dt>心脏出血漏洞：</dt>
+        <dd>停止旧版的 openssl 服务，升级 openssl 到新版本，并重新启动。</dd>
+      </dl>
+      <dl class="dl-horizontal">
+        <dt>永恒之蓝漏洞：</dt>
+        <dd>添加入站规则，关闭445、135、137、138、139端口。</dd>
+      </dl>
+      <dl class="dl-horizontal">
+        <dt>DNS域传送：</dt>
+        <dd>限制允许区域传送的主机地址。</dd>
+      </dl>
+    </div>
+<script>
+
+</script>
+</body>
+</html>

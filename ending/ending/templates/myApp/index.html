@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+     <meta charset="utf-8">
+	{% load static %}
+	{% load bootstrap3 %}
+   	{% bootstrap_css %}
+   	{% bootstrap_javascript %}
+    {% bootstrap_messages %}
+	<link href="https://v3.bootcss.com/examples/signin/signin.css" rel="stylesheet">
+    <title>通用漏洞扫描系统</title>
+  </head>
+
+ <body>
+ 	<script></script>
+	<script src="http://cdn.static.runoob.com/libs/jquery/2.1.1/jquery.min.js"></script>
+	<script src="http://cdn.static.runoob.com/libs/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <div class="page-header">
+         <h1 style="color:blue">通用漏洞扫描系统<small>自动化扫描常见的漏洞工具</small></h1>
+        </div>
+    </div>
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="collapse navbar-collapse dr" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="index">主页</a></li>
+		  <li role="presentation" class="dropdown">
+   			 <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">工具<span class="caret"></span></a>
+       <ul class="dropdown-menu">
+           <li><a href="web">WEB相关漏洞检测工具</a></li>
+           <li><a href="leak">主机相关漏洞检测工具</a></li>
+       </ul>
+		  </li>
+        <li><a href="ending">防范建议</a></li>
+      </ul>
+    </div>
+  </div>
+  </nav>
+  <div>
+      <h2>通用漏洞扫描系统简介</h2>
+      <p class="lead" style="text-indent: 2em;">在安全测试过程中，针对不同的系统进行测试漏洞，为了使得测试效率更高，针对通用漏洞进行自动化检测便是本工具要达到的目的，本工具仅需要在输入框中输入需要扫描的IP的URL，系统自动完成扫描，等进度条读满后即可查看结果，也可点击扫描日志文件下载扫描结果日志。</p>
+      <h3>本工具可以扫描的漏洞有以下常见漏洞：</h3>
+      <dl class="dl-horizontal">
+        <dt>弱口令漏洞：</dt>
+        <dd> 弱口令(weak password) 没有严格和准确的定义，通常认为容易被别人（他们有可能对你很了解）猜
+测到或被破解工具破解的口令均为弱口令。</dd>
+      </dl>
+      <dl class="dl-horizontal">
+        <dt>SQL注入漏洞：</dt>
+        <dd>SQL注入攻击是黑客对数据库进行攻击的常用手段之一。</dd>
+      </dl>
+      <dl class="dl-horizontal">
+        <dt>心脏出血漏洞：</dt>
+        <dd>（Heartbleed）是一个出现在加密程序库OpenSSL的安全漏洞，该程序库广泛用于实现互联网的传输层安全（TLS）协议。</dd>
+      </dl>
+      <dl class="dl-horizontal">
+        <dt>永恒之蓝漏洞：</dt>
+        <dd>“永恒之蓝”利用Windows系统的SMB漏洞可以获取系统最高权限，不法分子通过改造“永恒之蓝”制作了wannacry勒索病毒。</dd>
+      </dl>
+      <dl class="dl-horizontal">
+        <dt>DNS域传送：</dt>
+        <dd>Dns是整个互联网公司业务的基础，如果配置不当，就会导致任何匿名用户都可以获取DNS服务器某一域的所有记录。</dd>
+      </dl>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+[+]Sqlinjection exist.........
+[*]payload:
+[*]http://192.168.74.128/DVWA'
+char inject!!!!!
